@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Limitless Recovery Center</title>
+<meta name="description" content="مركز لمتلس للتعافي الرياضي في قلالي، البحرين: حمام الثلج، جاكوزي حار، نورماتك، مساج، حجامة جافة وحلاقة الجسم. شوف الخدمات والأسعار واحجز على الواتساب.">
+<meta name="theme-color" content="#1A4680">
+<link rel="icon" href="media/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1D4F9E; --blue-d:#163D7C; --logo-blue:#1A4680; --sky:#5B8CFF; --grey:#818282; --navy:#0B0F1A;
+  --bg:#FFFFFF; --bg-2:#F2F5FB; --card:#FFFFFF; --line:#E1E6F0;
+  --ink:#0B0F1A; --ink-2:#4A5675; --ink-3:#7A86A3; --chip:#E9EFFA;
+  --accent-text:#1D4F9E;
+  --shadow:0 10px 30px rgba(26,70,128,.10); --r:22px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B0F1A; --bg-2:#111829; --card:#141C30; --line:#232E4A;
+    --ink:#FFFFFF; --ink-2:#C9D1E4; --ink-3:#8E9AB8; --chip:#1A2647; --accent-text:#7FA5FF; --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B0F1A; --bg-2:#111829; --card:#141C30; --line:#232E4A;
+  --ink:#FFFFFF; --ink-2:#C9D1E4; --ink-3:#8E9AB8; --chip:#1A2647; --accent-text:#7FA5FF; --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:128px}
+body{background:var(--bg);color:var(--ink);font-family:Tajawal,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.en{font-family:Montserrat,sans-serif;letter-spacing:.2px}
+a{color:inherit;text-decoration:none}
+img,video{display:block;max-width:100%}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+section{padding:68px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;color:var(--accent-text);background:var(--chip);padding:6px 14px;border-radius:99px}
+h2{font-size:clamp(28px,4vw,42px);font-weight:900;line-height:1.2;margin:14px 0 8px}
+.lead{color:var(--ink-2);font-size:17px;max-width:640px}
+.hl{color:var(--accent-text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:inherit;font-weight:800;font-size:16px;border:0;cursor:pointer;border-radius:99px;padding:14px 24px;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-d)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--accent-text)}
+.btn svg{width:20px;height:20px;flex:none}
+.sub{font-size:22px;font-weight:900;margin:40px 0 16px;display:flex;align-items:center;gap:10px}
+.sub::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:46px;height:auto}
+.brand b{display:block;font-family:Montserrat;letter-spacing:2.5px;font-size:15px;font-weight:800;color:var(--ink)}
+.brand small{display:block;font-size:12px;color:var(--ink-3);font-weight:700;margin-top:-2px}
+.nav .btn{padding:10px 18px;font-size:15px}
+@media (max-width:420px){.nav .btn span{display:none}.nav .btn{padding:10px 12px}}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:0 0 10px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:none;font-weight:700;font-size:14.5px;padding:7px 16px;border-radius:99px;background:var(--chip);color:var(--ink-2);transition:.15s}
+.tabs a.on{background:var(--blue);color:#fff}
+
+/* hero */
+.hero{padding:44px 0 60px;background:radial-gradient(900px 500px at 85% 0%,color-mix(in srgb,var(--blue) 13%,transparent),transparent 70%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,66px);font-weight:900;line-height:1.1;letter-spacing:-.5px;margin-top:16px}
+.hero p{font-size:19px;color:var(--ink-2);margin:18px 0 26px;max-width:520px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.stats div b{display:block;font-family:Montserrat;font-weight:800;font-size:28px;color:var(--accent-text);line-height:1.1}
+.stats div span{font-size:14px;color:var(--ink-2);font-weight:600}
+.hero-video{position:relative;justify-self:center;width:min(360px,100%);aspect-ratio:9/16;border-radius:32px;overflow:hidden;box-shadow:0 30px 60px rgba(26,70,128,.28);background:var(--navy)}
+.hero-video video{width:100%;height:100%;object-fit:cover}
+.hero-video .tag{position:absolute;bottom:16px;inset-inline:16px;background:rgba(11,15,26,.6);backdrop-filter:blur(8px);color:#fff;border-radius:16px;padding:10px 14px;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px}
+.dot{width:9px;height:9px;border-radius:50%;background:#3DDC84;box-shadow:0 0 0 4px rgba(61,220,132,.25)}
+@media (max-width:860px){.hero{padding-top:24px}.hero-grid{grid-template-columns:1fr;gap:32px}.hero-video{width:min(300px,82%)}}
+
+/* offers */
+.obar{display:block;background:linear-gradient(90deg,#163D7C,#1D4F9E,#2A5DB0);color:#fff;text-align:center;font-weight:800;font-size:14.5px;padding:8px 16px}
+.obar b{font-family:Montserrat;color:#FFD54A}
+.obar u{text-underline-offset:3px}
+.offers{padding:56px 0;background:linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%)}
+.offer{display:grid;grid-template-columns:300px 1fr;border-radius:30px;overflow:hidden;background:linear-gradient(140deg,#2A5DB0,#1D4F9E 50%,#0F2A57);color:#fff;box-shadow:0 30px 70px rgba(26,70,128,.35);position:relative;margin-top:24px}
+.offer + .offer{margin-top:20px}
+.offer .ov{position:relative;min-height:420px;background:var(--navy)}
+.offer .ov video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.offer .ot{padding:36px 40px;display:flex;flex-direction:column;gap:14px;justify-content:center;position:relative}
+.offer .ot::after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.06);top:-160px;left:-120px;pointer-events:none}
+.badge{align-self:flex-start;background:#FFD54A;color:#0B0F1A;font-weight:900;font-size:14px;padding:6px 14px;border-radius:99px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,213,74,.6)}50%{box-shadow:0 0 0 10px rgba(255,213,74,0)}}
+.offer h2{margin:0;font-size:clamp(30px,4.4vw,48px)}
+.offer h2 .y{color:#FFD54A}
+.offer .op{display:flex;align-items:baseline;gap:10px}
+.offer .op b{font-family:Montserrat;font-weight:800;font-size:clamp(64px,9vw,96px);line-height:.9}
+.offer .op span{font-weight:800;font-size:22px}
+.offer .oi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;list-style:none}
+.offer .oi li{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:10px 12px;font-weight:700;font-size:15px;display:flex;gap:8px;align-items:center}
+.offer .oi li i{font-style:normal;font-family:Montserrat;font-weight:800;color:#FFD54A}
+.offer .octa{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.offer .octa .btn{background:#fff;color:var(--blue)}
+.offer .octa small{color:#CFE0FF;font-weight:600}
+@media (max-width:860px){.offer{grid-template-columns:1fr}.offer .ov{min-height:300px}.offer .ot{padding:26px 20px}.offer .oi{grid-template-columns:1fr 1fr}}
+.tabs a.hot{background:#FFD54A;color:#0B0F1A}
+
+/* service cards */
+.bg2{background:var(--bg-2)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.grid{grid-template-columns:1fr}}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:grid;grid-template-columns:140px 1fr;box-shadow:var(--shadow);transition:transform .2s}
+.svc:hover{transform:translateY(-3px)}
+.svc .media{position:relative;background:var(--navy);min-height:230px}
+.svc .media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.play{position:absolute;bottom:10px;inset-inline-start:10px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;border:0;cursor:pointer}
+.play svg{width:14px;height:14px;fill:var(--blue)}
+.svc .body{padding:16px;display:flex;flex-direction:column;gap:6px}
+.en-name{font-family:Montserrat;font-weight:700;font-size:11.5px;letter-spacing:1.4px;color:var(--accent-text);text-transform:uppercase}
+.svc h3{font-size:21px;font-weight:900;line-height:1.25}
+.svc p{color:var(--ink-2);font-size:14.5px;line-height:1.55}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:12.5px;font-weight:700;background:var(--chip);color:var(--ink-2);padding:3px 10px;border-radius:99px}
+.foot{margin-top:auto;padding-top:10px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px dashed var(--line)}
+.price{display:flex;align-items:baseline;gap:5px;flex-wrap:wrap}
+.price b{font-family:Montserrat;font-size:26px;font-weight:800;color:var(--ink);line-height:1}
+.price small{font-weight:700;color:var(--ink-3);font-size:13px}
+.foot .btn{padding:9px 16px;font-size:14px}
+.note{font-size:12.5px;color:var(--ink-3)}
+@media (max-width:560px){.svc{grid-template-columns:120px 1fr}.svc .media{min-height:210px}.svc h3{font-size:19px}}
+
+/* packages */
+.pk-grid{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:20px}
+@media (max-width:900px){.pk-grid{grid-template-columns:1fr}}
+.pk{border:1.5px solid var(--line);border-radius:var(--r);padding:24px;background:var(--card);display:flex;flex-direction:column;gap:10px}
+.pk.feat{background:linear-gradient(150deg,#2A5DB0,#1D4F9E 55%,#163D7C);color:#fff;border:0;box-shadow:0 25px 50px rgba(26,70,128,.35);position:relative;overflow:hidden}
+.pk.feat::after{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.08);top:-120px;left:-90px;pointer-events:none}
+.pk .lbl{font-weight:800;font-size:13px;color:var(--accent-text)}
+.pk.feat .lbl{color:#CFE0FF}
+.pk h3{font-size:22px;font-weight:900;line-height:1.3}
+.pk .big{display:flex;align-items:baseline;gap:8px}
+.pk .big b{font-family:Montserrat;font-weight:800;font-size:46px;line-height:1}
+.pk .big span{font-weight:700;opacity:.8}
+.pk ul{list-style:none;display:grid;gap:7px}
+.pk li{display:flex;gap:9px;align-items:center;font-weight:600}
+.pk li::before{content:"";width:8px;height:8px;flex:none;border-radius:50%;background:var(--accent-text)}
+.pk.feat li::before{background:#FFD54A}
+.pk .btn{margin-top:auto}
+.pk.feat .btn{background:#fff;color:var(--blue)}
+
+/* massage */
+.m-wrap{display:grid;grid-template-columns:320px 1fr;gap:26px;align-items:start}
+@media (max-width:900px){.m-wrap{grid-template-columns:1fr}}
+.m-video{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:9/14;background:var(--navy);box-shadow:var(--shadow)}
+.m-video video{width:100%;height:100%;object-fit:cover}
+@media (max-width:900px){.m-video{aspect-ratio:4/5;max-height:440px}}
+.m-video .cap{position:absolute;bottom:14px;inset-inline:14px;color:#fff;font-weight:800;font-size:15px;background:rgba(11,15,26,.55);backdrop-filter:blur(6px);padding:8px 12px;border-radius:12px}
+.table{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.tr{display:grid;grid-template-columns:1fr 72px 72px 72px;align-items:center;gap:6px;padding:13px 18px;border-top:1px solid var(--line);transition:background .15s}
+.tr:first-child{border-top:0}
+a.tr:hover{background:var(--bg-2)}
+.th{background:var(--bg-2);font-weight:800;font-size:13px;color:var(--ink-2);text-align:center}
+.th div:first-child{text-align:start}
+.tr .n b{display:block;font-size:17px;font-weight:800;line-height:1.3}
+.tr .n small{font-family:Montserrat;font-size:10.5px;letter-spacing:1px;color:var(--ink-3);font-weight:700}
+.tr .p{text-align:center;font-family:Montserrat;font-weight:800;font-size:17px}
+.tr .p small{display:block;font-family:Tajawal;font-size:11px;color:var(--ink-3);font-weight:700;margin-top:-3px}
+.tr .tagc{display:inline-block;font-size:11px;font-weight:800;background:var(--blue);color:#fff;border-radius:99px;padding:1px 8px;margin-inline-start:6px;vertical-align:middle}
+.grp{padding:8px 18px;background:var(--chip);font-size:13px;font-weight:800;color:var(--accent-text)}
+@media (max-width:520px){.tr{grid-template-columns:1fr 54px 54px 54px;padding:12px 12px;gap:4px}.tr .n b{font-size:15px}.tr .p{font-size:15px}}
+
+/* cupping feature */
+.cup{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:28px;overflow:hidden;background:var(--navy);color:#fff;box-shadow:0 30px 60px rgba(11,15,26,.25)}
+@media (max-width:860px){.cup{grid-template-columns:1fr}}
+.cup .vids{display:grid;grid-template-columns:1fr 1fr;gap:4px;min-height:420px}
+.cup .vids div{position:relative}
+.cup .vids video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cup .txt{padding:40px;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.cup .txt p{color:#C9D1E4}
+.cup .row{display:flex;gap:10px;flex-wrap:wrap}
+.cup .row div{background:#141C30;border:1px solid #232E4A;border-radius:16px;padding:12px 16px;text-align:center;min-width:92px}
+.cup .row b{display:block;font-family:Montserrat;font-weight:800;font-size:26px}
+.cup .row small{color:#8E9AB8;font-weight:700}
+@media (max-width:560px){.cup .txt{padding:26px 20px}.cup .vids{min-height:300px}}
+
+/* shaving */
+.shave{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:860px){.shave{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.shave{grid-template-columns:1fr}.shave a.wide{grid-column:auto}}
+.shave a{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;justify-content:space-between;align-items:center;gap:8px;transition:.15s}
+.shave a:hover{border-color:var(--blue)}
+.shave b{font-size:16.5px;font-weight:800}
+.shave small{display:block;font-family:Montserrat;font-size:10.5px;color:var(--ink-3);font-weight:700;letter-spacing:.8px}
+.shave .v{font-family:Montserrat;font-weight:800;font-size:20px;color:var(--accent-text);white-space:nowrap}
+.shave .v small{display:inline;font-size:11px;letter-spacing:0}
+.shave a.wide{grid-column:span 2;background:var(--chip);border-color:transparent}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.gal .g{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:9/16;background:var(--navy);cursor:pointer;border:0;padding:0}
+.gal .g video{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gal .g:hover video{transform:scale(1.04)}
+.gal .g span{position:absolute;bottom:10px;inset-inline-start:10px;background:rgba(11,15,26,.55);color:#fff;font-size:13px;font-weight:700;padding:4px 10px;border-radius:99px;backdrop-filter:blur(6px)}
+@media (max-width:900px){.gal{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.gal{grid-template-columns:repeat(2,1fr);gap:8px}}
+
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+@media (max-width:800px){.why{grid-template-columns:1fr}}
+.why div{background:var(--bg-2);border-radius:var(--r);padding:24px}
+.why b{display:block;font-size:19px;font-weight:900;margin-bottom:4px}
+.why p{color:var(--ink-2);font-size:15px}
+.why i{font-style:normal;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:14px;background:var(--blue);color:#fff;font-size:20px;margin-bottom:12px}
+
+/* visit */
+.visit{background:var(--navy);color:#fff}
+.visit .lead{color:#C9D1E4}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch;margin-top:30px}
+@media (max-width:860px){.visit-grid{grid-template-columns:1fr}}
+.contact{display:grid;gap:12px}
+.contact a{display:flex;align-items:center;gap:14px;background:#141C30;border:1px solid #232E4A;border-radius:18px;padding:16px 18px;transition:.15s}
+.contact a:hover{border-color:var(--sky)}
+.contact .ic{width:46px;height:46px;border-radius:14px;background:var(--blue);display:grid;place-items:center;flex:none}
+.contact .ic svg{width:22px;height:22px;fill:#fff}
+.contact small{display:block;color:#8E9AB8;font-weight:600;font-size:13px}
+.contact b{font-size:18px}
+.map{position:relative;display:block;border-radius:var(--r);overflow:hidden;min-height:300px;border:1px solid #232E4A;background:#141C30 url(media/mapcard.jpg) center 30%/cover}
+.map::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,15,26,.85) 0%,rgba(11,15,26,.2) 30%,rgba(11,15,26,0) 50%)}
+.map .in{position:absolute;bottom:20px;inset-inline:20px;display:flex;justify-content:space-between;align-items:center;gap:10px;color:#fff}
+.map .in b{font-size:19px}
+.map .btn{padding:10px 16px;font-size:14px}
+.safety{margin-top:18px;font-size:13.5px;color:#8E9AB8}
+
+footer{background:var(--navy);color:#8E9AB8;border-top:1px solid #1A2238;padding:26px 0 30px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+footer a{color:#C9D1E4}
+.mbar{position:fixed;bottom:0;inset-inline:0;z-index:60;display:none;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+.mbar .btn{flex:1;padding:13px}
+@media (max-width:860px){.mbar{display:flex}footer{padding-bottom:100px}}
+
+.lb{position:fixed;inset:0;z-index:100;background:rgba(5,8,15,.92);display:none;place-items:center;padding:20px}
+.lb.on{display:grid}
+.lb video{max-height:86vh;max-width:100%;border-radius:20px}
+.lb button{position:absolute;top:16px;inset-inline-end:16px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:var(--navy);font-size:22px;cursor:pointer;font-weight:800}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<a class="obar" id="obar" href="#offers" hidden></a>
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Limitless Sports Recovery Center">
+      <img src="media/logo.png" alt="">
+      <div><b>LIMITLESS</b><small>مركز لمتلس للتعافي الرياضي</small></div>
+    </a>
+    <a class="btn btn-blue wa" href="#" data-msg="هلا ليميتلس، أبغى أحجز جلسة"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.9-2.8-1.2-4.6-4.1-4.7-4.3-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg><span>احجز واتساب</span></a>
+  </div>
+  <nav class="wrap tabs" aria-label="الأقسام">
+    <a href="#offers" class="hot" id="offTab" hidden>العروض </a>
+    <a href="#recovery">الاستشفاء</a>
+    <a href="#packages">الباقات</a>
+    <a href="#massage">المساج</a>
+    <a href="#cupping">الحجامة</a>
+    <a href="#shaving">حلاقة الجسم</a>
+    <a href="#gallery">من داخل المركز</a>
+    <a href="#visit">موقعنا</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">مركز استشفاء في قلالي </span>
+      <h1>جسمك تعبان؟<br><span class="hl">ارتاح صح</span> عندنا</h1>
+      <p>سواء جاي من تمرين ثقيل، ولا من دوام طويل وزحمة شوارع. حمام ثلج، جاكوزي حار، نورماتك، مساج وحجامة… كل اللي يرجّع لك نشاطك في مكان واحد.</p>
+      <div class="hero-cta">
+        <a href="#recovery" class="btn btn-blue">شوف الخدمات والأسعار</a>
+        <a href="#gallery" class="btn btn-ghost">جولة داخل المركز</a>
+      </div>
+      <div class="stats">
+        <div><b dir="ltr">5 BD</b><span>جلسات تبدأ من</span></div>
+        <div><b>9</b><span>أنواع مساج</span></div>
+        <div><b>30</b><span>دقيقة لكل جلسة استشفاء</span></div>
+      </div>
+    </div>
+    <div class="hero-video">
+      <video src="media/hero.mp4" poster="media/hero.jpg" autoplay muted loop playsinline preload="auto"></video>
+      <div class="tag"><span class="dot"></span>لقطات حقيقية من داخل المركز</div>
+    </div>
+  </div>
+</section>
+
+<section class="offers" id="offers" hidden>
+  <div class="wrap">
+    <span class="eyebrow">العروض </span>
+    <div id="offList"></div>
+  </div>
+</section>
+
+<section class="bg2" id="recovery">
+  <div class="wrap">
+    <span class="eyebrow">خدمة الاستشفاء · Recovery</span>
+    <h2>جلسات <span class="hl">الاستشفاء</span></h2>
+    <p class="lead">كل جلسة ٣٠ دقيقة. جرّب وحدة، أو خذ باقة وجمّع أكثر من خدمة بسعر أحسن.</p>
+    <div class="grid" id="recGrid" style="margin-top:28px"></div>
+
+    <h3 class="sub" id="packages">باقات الاستشفاء</h3>
+    <div class="pk-grid" id="pkGrid"></div>
+  </div>
+</section>
+
+<section id="massage">
+  <div class="wrap">
+    <span class="eyebrow">خدمة مساج · Massage</span>
+    <h2>اختار <span class="hl">المساج</span> والمدة</h2>
+    <p class="lead">٩ أنواع مساج بثلاث مدد. اضغط على أي نوع وبيفتح لك الواتساب للحجز على طول.</p>
+    <div class="m-wrap" style="margin-top:28px">
+      <div class="m-video">
+        <video data-src="media/msg1.mp4" poster="media/msg1.jpg" muted loop playsinline preload="none"></video>
+        <button class="play" aria-label="شغّل الفيديو كبير" data-v="msg1"><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg></button>
+        <div class="cap">من غرفة المساج في ليميتلس</div>
+      </div>
+      <div class="table" id="mTable"></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg2" id="cupping">
+  <div class="wrap">
+    <div class="cup reveal">
+      <div class="vids">
+        <div><video data-src="media/cup2.mp4" poster="media/cup2.jpg" muted loop playsinline preload="none"></video><button class="play" aria-label="شغّل الفيديو كبير" data-v="cup2"><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg></button></div>
+        <div><video data-src="media/cup1.mp4" poster="media/cup1.jpg" muted loop playsinline preload="none"></video></div>
+      </div>
+      <div class="txt">
+        <span class="eyebrow" style="background:#1A2647;color:#7FA5FF;align-self:flex-start">الحجامة · Dry Cupping</span>
+        <h2 style="margin:0">مساج مع <span style="color:#7FA5FF">الحجامة الجافة</span></h2>
+        <p>كاسات الحجامة الجافة مع جلسة مساج كاملة، في غرفة هادية ونظيفة. تحس بالفرق في الظهر والكتوف.</p>
+        <div class="row">
+          <div><b>19</b><small>د.ب · ساعة</small></div>
+          <div><b>23</b><small>د.ب · ساعة ونص</small></div>
+          <div><b>28</b><small>د.ب · ساعتين</small></div>
+        </div>
+        <a class="btn btn-blue wa" style="align-self:flex-start" href="#" data-msg="هلا ليميتلس، أبغى أحجز مساج مع الحجامة الجافة">احجز الحجامة</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shaving">
+  <div class="wrap">
+    <span class="eyebrow">خدمة حلاقة الجسم · Body Shaving</span>
+    <h2>حلاقة <span class="hl">الجسم</span></h2>
+    <p class="lead" style="margin-bottom:26px">اختار المنطقة، والسعر واضح.</p>
+    <div class="shave" id="shave"></div>
+  </div>
+</section>
+
+<section id="gallery" class="bg2">
+  <div class="wrap">
+    <span class="eyebrow">من داخل المركز</span>
+    <h2>شوف المكان <span class="hl">قبل لا تجي</span></h2>
+    <p class="lead">لقطات مصوّرة بالكاميرا من داخل ليميتلس. اضغط على أي فيديو عشان تكبّره.</p>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">ليش ليميتلس؟</span>
+    <h2>مو بس للرياضيين</h2>
+    <div class="why">
+      <div><b>بعد التمرين</b><p>رجولك ثقيلة بعد Leg Day؟ النورماتك وحمام الثلج يرجّعونك أخف.</p></div>
+      <div><b>بعد الدوام</b><p>جلسة طويلة على المكتب وزحمة شوارع؟ الجاكوزي والمساج يفكّون الظهر والرقبة.</p></div>
+      <div><b>وقت لنفسك</b><p>مكان هادي ونظيف، تدخل تعبان وتطلع وبالك صافي.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <span class="eyebrow" style="background:#1A2647;color:#7FA5FF">زورونا</span>
+    <h2> قلالي، مقابل شارع أمواج</h2>
+    <p class="lead">احجز جلستك على الواتساب أو كلمنا مباشرة.</p>
+    <div class="visit-grid">
+      <div class="contact">
+        <a class="wa" href="#" data-msg="هلا ليميتلس، أبغى أحجز جلسة"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.9-2.8-1.2-4.6-4.1-4.7-4.3-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.8-.1 1.4Z"/></svg></span><div><small>واتساب للحجز</small><b class="en" dir="ltr">3436 6355</b></div></a>
+        <a href="tel:+97377097616"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></span><div><small>اتصال</small><b class="en" dir="ltr">7709 7616</b></div></a>
+        <a href="https://www.instagram.com/limitlessrecoverycenter/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3Zm0 7.8a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2Zm6-8a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM21 8c0-1.7-.5-3.2-1.7-4.3S16.7 2 15 2H9C7.3 2 5.8 2.5 4.7 3.7S3 6.3 3 8v8c0 1.7.5 3.2 1.7 4.3S7.3 22 9 22h6c1.7 0 3.2-.5 4.3-1.7S21 17.7 21 16V8Zm-2.4 10.4c-.9.9-2.2 1.3-3.6 1.3H9c-1.4 0-2.7-.4-3.6-1.3S4.1 16.4 4.1 15V9c0-1.4.4-2.7 1.3-3.6S7.6 4.1 9 4.1h6c1.4 0 2.7.4 3.6 1.3S19.9 7.6 19.9 9v6c0 1.4-.4 2.7-1.3 3.4Z"/></svg></span><div><small>إنستقرام</small><b class="en" dir="ltr">@limitlessrecoverycenter</b></div></a>
+      </div>
+      <a class="map" href="https://www.google.com/maps/search/?api=1&query=Limitless+Recovery+Center+Galali+Bahrain" target="_blank" rel="noopener"><span class="in"><b> قلالي، مقابل شارع أمواج</b><span class="btn btn-blue">افتح الخريطة</span></span></a>
+    </div>
+    <p class="safety">إذا عندك مشاكل في القلب أو الضغط أو حامل، استشير طبيبك قبل حمام الثلج والجاكوزي الحار.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© مركز لمتلس للتعافي الرياضي · <span class="en">Limitless Sports Recovery Center</span></span>
+    <a href="https://www.instagram.com/limitlessrecoverycenter/" target="_blank" rel="noopener" class="en">@limitlessrecoverycenter</a>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-blue wa" href="#" data-msg="هلا ليميتلس، أبغى أحجز جلسة">احجز واتساب</a>
+  <a class="btn btn-ghost" href="tel:+97377097616">اتصال</a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="فيديو"><button aria-label="إغلاق">&times;</button><video controls playsinline loop muted></video></div>
+
+<script>
+/* ===== الأسعار من قائمة لمتلس (أغسطس 2026). عدّلها هنا ===== */
+const WHATSAPP = "97334366355";
+
+const RECOVERY = [
+  { ar:"حمام الثلج البارد", en:"Ice Bath", price:5, time:"30 دقيقة", video:"icebath",
+    desc:"غطسة باردة تهدّي العضلات بعد المجهود وتعطيك انتعاش فوري.", chips:["رياضيين","انتعاش"],
+    note:"إذا عندك مشاكل قلب أو ضغط، استشير طبيبك أول." },
+  { ar:"جاكوزي حار", en:"Hot Jacuzzi", price:5, time:"30 دقيقة", video:"jacuzzi",
+    desc:"ماي دافي وفقاعات ترخّي الجسم وتفك شد الظهر والكتوف بعد يوم طويل.", chips:["استرخاء","بعد الدوام"] },
+  { ar:"حذاء النورماتيك", en:"Normatec Boots", price:5, time:"30 دقيقة", video:"boots",
+    desc:"بوتات ضغط هوائي تضغط وتفك على الرجول من القدم للفخذ. تحس رجولك أخف وأنت قاعد ترتاح.", chips:["رجول","بعد Leg Day","وقوف طويل"] }
+];
+
+const PACKAGES = [
+  { lbl:"30 دقيقة", name:"باقة البارد والحار", en:"Cold & Hot Package", price:"8", items:["حمام الثلج البارد","جاكوزي حار"] },
+  { lbl:"30 دقيقة", name:"باقة الاستشفاء العضلي", en:"Recovery Package", price:"9.900", items:["حمام الثلج البارد","جاكوزي حار","حذاء النورماتيك"] },
+  { feat:true, lbl:"ساعة ونص · الباقة الكاملة ", name:"باقة الاستشفاء العضلي + مساج", en:"Recovery Package + Massage Therapy", price:"20",
+    items:["حمام الثلج البارد","جاكوزي حار","حذاء النورماتيك","مساج"] }
+];
+
+const MASSAGE = [
+  { group:"١٧ / ٢٠ / ٢٥ دينار" },
+  { ar:"مساج السويدي", en:"Swedish Massage", p:[17,20,25] },
+  { ar:"تدليك القدم", en:"Foot Massage", p:[17,20,25] },
+  { ar:"مساج الأحجار الساخنة", en:"Hot Stone Massage", p:[17,20,25] },
+  { group:"١٩ / ٢٣ / ٢٨ دينار" },
+  { ar:"مساج الرياضي", en:"Sports Massage", p:[19,23,28] },
+  { ar:"مساج العميق", en:"Deep Tissue Massage", p:[19,23,28] },
+  { ar:"مساج مع الحجامة الجافة", en:"Massage with Dry Cupping", p:[19,23,28], tag:"حجامة" },
+  { ar:"مساج التايلندي", en:"Thai Massage", p:[19,23,28] },
+  { ar:"مساج الشياتسو", en:"Shiatsu Massage", p:[19,23,28] },
+  { ar:"مساج مزيج من كل الأنواع", en:"Combination Massage", p:[19,23,28] }
+];
+
+const SHAVING = [
+  { ar:"الصدر", en:"Chest", p:5 }, { ar:"الظهر", en:"Back", p:5 },
+  { ar:"الذراعين كاملتين", en:"Full Arms", p:5 }, { ar:"الساقين كاملتين", en:"Full Legs", p:5 },
+  { ar:"تحت الإبط", en:"Underarms", p:3 }, { ar:"الجسم كاملاً بدون الأذرع", en:"Full Body without Hands", p:15 },
+  { ar:"الجسم كاملاً", en:"Full Body", p:20, wide:true }
+];
+
+const GALLERY = [
+  ["reception2","الاستقبال"],["icebath2","حمام الثلج"],["jacuzzi2","الجاكوزي الحار"],["boots2","نورماتك"],
+  ["msg2","مساج"],["cup2","حجامة جافة"],["lounge2","منطقة الراحة"],["towels","مناشف نظيفة"],
+  ["cold3","حمام الثلج"],["msg3","مساج عميق"],["model-cold","غطسة باردة"],["trophy","إهداء من نادي المحرق"]
+];
+
+/* ============================================================ */
+/* ===== العروض: أضف أو احذف عرض هنا. إذا القائمة فاضية [] يختفي قسم العروض كامل ===== */
+const OFFERS = [
+  { title:"٦ خدمات بـ", price:20, video:"jacuzzi2", poster:"jacuzzi2.jpg",
+    bar:" عرض: ٦ خدمات استشفاء بـ <b>20</b> دينار بس، احجز الحين",
+    sub:"سواء جاي من تمرين ثقيل ولا من دوام طويل وزحمة شوارع، جسمك يستاهل يرتاح صح. كلها بباقة وحدة.",
+    items:["حمام الثلج البارد","جاكوزي حار","حذاء النورماتيك","مساج ساعة كاملة","مساج بالأحجار الساخنة","الحجامة الجافة"],
+    msg:"هلا ليميتلس، أبغى أحجز عرض ٦ خدمات بـ ٢٠ دينار" }
+];
+
+const waLink = m => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(m)}`;
+const play = v => `<button class="play" aria-label="شغّل الفيديو كبير" data-v="${v}"><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg></button>`;
+const lazyVid = v => `<video data-src="media/${v}.mp4" poster="media/${v}.jpg" muted loop playsinline preload="none"></video>`;
+
+if (OFFERS.length) {
+  document.getElementById("offers").hidden = false;
+  document.getElementById("offTab").hidden = false;
+  const ob = document.getElementById("obar"); ob.hidden = false; ob.innerHTML = OFFERS[0].bar;
+  document.getElementById("offList").innerHTML = OFFERS.map(o => `
+    <div class="offer reveal">
+      <div class="ov"><video data-src="media/${o.video}.mp4" poster="media/${o.poster}" muted loop playsinline preload="none"></video>${play(o.video)}</div>
+      <div class="ot">
+        <span class="badge">عرض لفترة محدودة</span>
+        <h2>${o.title} <span class="y">${o.price} دينار</span> بس</h2>
+        <p style="color:#DCE6FF">${o.sub}</p>
+        <ul class="oi">${o.items.map((t,i)=>`<li>${t}</li>`).join("")}</ul>
+        <div class="octa"><a class="btn" target="_blank" rel="noopener" href="${waLink(o.msg)}">احجز العرض على الواتساب</a><small>العرض حسب التوفر</small></div>
+      </div>
+    </div>`).join("");
+}
+
+document.getElementById("recGrid").innerHTML = RECOVERY.map(s => `
+  <article class="svc reveal">
+    <div class="media">${lazyVid(s.video)}${play(s.video)}</div>
+    <div class="body">
+      <span class="en-name">${s.en}</span>
+      <h3>${s.ar}</h3>
+      <p>${s.desc}</p>
+      <div class="chips">${s.chips.map(t=>`<span>${t}</span>`).join("")}</div>
+      ${s.note?`<div class="note">${s.note}</div>`:""}
+      <div class="foot">
+        <span class="price"><b>${s.price}</b><small>د.ب · ${s.time}</small></span>
+        <a class="btn btn-blue" target="_blank" rel="noopener" href="${waLink(`هلا ليميتلس، أبغى أحجز ${s.ar}`)}">احجز</a>
+      </div>
+    </div>
+  </article>`).join("");
+
+document.getElementById("pkGrid").innerHTML = PACKAGES.map(p => `
+  <div class="pk reveal ${p.feat?"feat":""}">
+    <span class="lbl">${p.lbl}</span>
+    <h3>${p.name}</h3>
+    <span class="en-name" style="${p.feat?"color:#CFE0FF":""}">${p.en}</span>
+    <div class="big"><b>${p.price}</b><span>دينار</span></div>
+    <ul>${p.items.map(i=>`<li>${i}</li>`).join("")}</ul>
+    <a class="btn ${p.feat?"":"btn-blue"}" target="_blank" rel="noopener" href="${waLink(`هلا ليميتلس، أبغى أحجز ${p.name}`)}">احجز الباقة</a>
+  </div>`).join("");
+
+document.getElementById("mTable").innerHTML =
+  `<div class="tr th"><div>نوع المساج</div><div>ساعة</div><div>ساعة ونص</div><div>ساعتين</div></div>` +
+  MASSAGE.map(m => m.group ? `<div class="grp">${m.group}</div>` : `
+    <a class="tr" target="_blank" rel="noopener" href="${waLink(`هلا ليميتلس، أبغى أحجز ${m.ar}`)}">
+      <div class="n"><b>${m.ar}${m.tag?`<span class="tagc">${m.tag}</span>`:""}</b><small>${m.en.toUpperCase()}</small></div>
+      ${m.p.map(x=>`<div class="p">${x}<small>د.ب</small></div>`).join("")}
+    </a>`).join("");
+
+document.getElementById("shave").innerHTML = SHAVING.map(s => `
+  <a class="${s.wide?"wide":""}" target="_blank" rel="noopener" href="${waLink(`هلا ليميتلس، أبغى أحجز حلاقة ${s.ar}`)}">
+    <div><b>${s.ar}</b><small>${s.en.toUpperCase()}</small></div>
+    <span class="v">${s.p} <small>د.ب</small></span>
+  </a>`).join("");
+
+document.getElementById("gal").innerHTML = GALLERY.map(([v,t]) => `
+  <button class="g reveal" data-v="${v}" aria-label="${t}">${lazyVid(v)}<span>${t}</span></button>`).join("");
+
+document.querySelectorAll("a.wa").forEach(a => { a.href = waLink(a.dataset.msg); a.target="_blank"; a.rel="noopener"; });
+
+/* lazy play videos in view */
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const io = new IntersectionObserver(es => es.forEach(e => {
+  const v = e.target;
+  if (e.isIntersecting) { if (!v.src && v.dataset.src) v.src = v.dataset.src; if (!reduce) v.play().catch(()=>{}); }
+  else v.pause();
+}), { rootMargin: "120px" });
+document.querySelectorAll("video[data-src]").forEach(v => io.observe(v));
+
+const rv = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); rv.unobserve(e.target); } }), { threshold:.08 });
+document.querySelectorAll(".reveal").forEach(el => rv.observe(el));
+
+/* active tab */
+const tabs = [...document.querySelectorAll(".tabs a")];
+const secs = tabs.map(a => document.querySelector(a.getAttribute("href")));
+const setTab = () => {
+  let cur = -1; secs.forEach((s,i) => { if (s && s.getBoundingClientRect().top < 160) cur = i; });
+  tabs.forEach((a,i) => a.classList.toggle("on", i===cur));
+  if (cur>=0) { const t = tabs[cur], bar = t.parentElement; const l = t.offsetLeft - bar.clientWidth/2 + t.clientWidth/2; bar.scrollTo({left:l,behavior:"smooth"}); }
+};
+let tk; addEventListener("scroll", () => { clearTimeout(tk); tk = setTimeout(setTab, 80); }, { passive:true });
+
+/* lightbox */
+const lb = document.getElementById("lb"), lbv = lb.querySelector("video");
+const openLb = v => { lbv.src = `media/${v}.mp4`; lbv.poster = `media/${v}.jpg`; lb.classList.add("on"); lbv.play().catch(()=>{}); };
+const closeLb = () => { lb.classList.remove("on"); lbv.pause(); lbv.removeAttribute("src"); lbv.load(); };
+document.addEventListener("click", e => { const t = e.target.closest("[data-v]"); if (t) { e.preventDefault(); openLb(t.dataset.v); } });
+lb.querySelector("button").onclick = closeLb;
+lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+addEventListener("keydown", e => { if (e.key === "Escape") closeLb(); });
+</script>
+</body>
+</html>
